@@ -29,7 +29,7 @@ function buttonClicked() {
     let inputValue = inputElement.value;
 
     // Check if the input value is equal to the random number
-    if (inputValue == randomNumber) {
+    if (inputValue === randomNumber) {
         // Update guessed number, disable input, check button text and color.
         messageElement.textContent = `Congratulations - ${inputValue} is correct!`;
         inputElement.disabled = true;
@@ -62,7 +62,7 @@ function buttonClicked() {
     }
 
     // Check if the chance is zero
-    if (guessesLeft == 0) {
+    if (guessesLeft === 0) {
         //Update check button, disable input, and clear input value.
         // Update guessed number text and color to indicate user loss.
         checkButton.textContent = 'Replay';
